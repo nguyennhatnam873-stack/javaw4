@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessible Photo Gallery - Wander Notes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body onload="addTabFocus()">
+<main>
+  <h1>Accessible Photo Gallery</h1>
+  <p class="hint">Hover over an image, or press Tab to move between images with the keyboard.</p>
+  <div id="image" class="preview">Hover over an image below to display here.</div>
+  <div class="thumbs">
+    <img class="thumb" src="images/photo1.jpg" alt="Colorful silk lanterns glowing in Hoi An" width="800" height="520" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img class="thumb" src="images/photo2.jpg" alt="Golden rice terraces in the mountains of Sapa" width="800" height="520" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img class="thumb" src="images/photo3.jpg" alt="Tour boats on the green water of Ha Long Bay" width="800" height="520" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img class="thumb" src="images/photo4.jpg" alt="People walking through a busy night street food market" width="800" height="520" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img class="thumb" src="images/photo5.jpg" alt="Aerial view of a beach and fishing village with turquoise water" width="800" height="520" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+    <img class="thumb" src="images/photo6.jpg" alt="Motorbike riders on a mountain road in Ha Giang" width="800" height="520" onmouseover="upDate(this)" onmouseleave="undo()" onfocus="upDate(this)" onblur="undo()">
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
